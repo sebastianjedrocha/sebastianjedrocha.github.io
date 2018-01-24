@@ -171,7 +171,7 @@ h3 {
   @media (max-width: 46.25em) {
     .wallpaper {
       background-image: linear-gradient(rgba(149, 117, 205, 0.6), rgba(149, 117, 205, 0.6)), url(../img/background-small.jpg);
-      background-size: cover !important; } }
+      background-size: contain !important; } }
 
 .btn, .btn:link, .btn:visited {
   padding: 1.5rem 4rem;
