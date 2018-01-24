@@ -144,24 +144,20 @@ h3 {
         display: block; } }
 
 .heading-2 {
-  font-size: 3.6rem;
-  /*
-  // Heading from form section:
-  &--form {
-    color: $color-white;
-    padding-top: 0 !important;
-
-    // Making white underline for form section heading:
-    &::after {
+  font-size: 3.6rem; }
+  .heading-2--form {
+    color: #fff;
+    padding-top: 0 !important; }
+    .heading-2--form::after {
       display: block;
       height: 2px;
-      background-color: $color-white !important;
+      background-color: #fff !important;
       content: " ";
       width: 100px;
-      margin: 0.5rem auto 0 auto;
-    }
-  }
-  */ }
+      margin: 0.5rem auto 0 auto; }
+      @media (max-width: 46.25em) {
+        .heading-2--form::after {
+          display: none; } }
 
 .heading-3 {
   font-size: 2rem; }
@@ -225,8 +221,14 @@ h3 {
     transition: all 0.2s; }
   .btn--project:hover .btn--project__text-visible {
     transform: translateY(10rem); }
+    @media (max-width: 46.25em) {
+      .btn--project:hover .btn--project__text-visible {
+        transform: 0; } }
   .btn--project:hover .btn--project__text-invisible {
     transform: translateY(1.5rem); }
+    @media (max-width: 46.25em) {
+      .btn--project:hover .btn--project__text-invisible {
+        transform: 0; } }
 
 input[type="submit"] {
   text-decoration: none;
@@ -466,12 +468,7 @@ input[type="submit"] {
     text-align: center;
     padding: 1.25rem;
     font-weight: 300;
-    transform: translateY(50%);
-    /*
-    @include respond(phone) {
-      transform: translateY(11rem);
-    }
-    */ }
+    transform: translateY(50%); }
   .project__img {
     width: 100%;
     grid-row: 1 / 2;
