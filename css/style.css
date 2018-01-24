@@ -221,6 +221,9 @@ h3 {
     left: 8rem;
     transform: translateY(-5rem);
     transition: all 0.2s; }
+    @media (max-width: 46.25em) {
+      .btn--project__text-invisible {
+        display: none; } }
   .btn--project:hover .btn--project__text-visible {
     transform: translateY(10rem); }
     @media (max-width: 46.25em) {
