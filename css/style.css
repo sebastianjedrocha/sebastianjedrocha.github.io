@@ -167,6 +167,7 @@ h3 {
   -webkit-background-clip: text;
   font-weight: inherit;
   z-index: 120;
+  display: block;
 }
 
 .heading-1--main {
