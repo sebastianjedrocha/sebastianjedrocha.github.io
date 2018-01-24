@@ -146,7 +146,7 @@ h3 {
 .heading-2 {
   font-size: 3.6rem; }
   .heading-2--form {
-    color: #fff;
+    color: #fff !important;
     padding-top: 0 !important; }
     .heading-2--form::after {
       display: block;
@@ -576,7 +576,7 @@ input[type="submit"] {
   background-image: linear-gradient(to bottom, rgba(98, 0, 234, 0.75), #6200ea); }
   .form__heading {
     grid-row: 1 / 1;
-    color: #fff;
+    color: #fff !important;
     margin-left: 3rem;
     padding-top: 4rem;
     padding-bottom: 2rem;
