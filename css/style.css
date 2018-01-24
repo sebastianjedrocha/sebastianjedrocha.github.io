@@ -161,10 +161,10 @@ h3 {
 
 h2,
 h3 {
-  color: transparent;
+  color: transparent !important;
   /*background-image: -webkit-gradient(linear, left top, right top, from(#ff0000), to(#6200ea))*/;
-  background-image: linear-gradient(to right, #ff0000, #6200ea);
-  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #ff0000, #6200ea) !important;
+  -webkit-background-clip: text !important;
   font-weight: inherit;
   z-index: 120;
   display: block;
