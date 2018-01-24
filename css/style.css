@@ -76,18 +76,27 @@ body {
 .knowledge {
   background-color: #FAFAFA !important; }
 
+h1,
+h2,
+h3 {
+  text-transform: uppercase; }
+
 h2 {
-  padding: 6rem 0; }
+  padding: 6rem 0;
+  /*
+  // Making underline:
+  &::after {
+    display: block;
+    height: 2px;
+    background-color: $color-secondary;
+    content: "";
+    width: 100px;
+    margin: 0.5rem auto 0 auto;
+  }
+  */ }
   @media (max-width: 46.25em) {
     h2 {
       padding: 2rem 0 4rem 0; } }
-  h2::after {
-    display: block;
-    height: 2px;
-    background-color: #6200ea;
-    content: "";
-    width: 100px;
-    margin: 0.5rem auto 0 auto; }
 
 h3 {
   padding-bottom: 2rem; }
@@ -95,16 +104,11 @@ h3 {
     h3 {
       padding-bottom: 1rem; } }
 
-h1,
 h2,
 h3 {
-  text-transform: uppercase; }
-
-h2,
-h3 {
-  color: transparent;
-  background-image: linear-gradient(to right, #ff0000, #6200ea);
-  -webkit-background-clip: text;
+  color: transparent !important;
+  background-image: linear-gradient(to right, #ff0000, #6200ea) !important;
+  -webkit-background-clip: text !important;
   font-weight: inherit; }
 
 .heading-1--main {
@@ -143,6 +147,7 @@ h3 {
 .heading-2 {
   font-size: 3.6rem;
   /*
+  // Heading from form section:
   &--form {
     color: $color-white;
     padding-top: 0 !important;
