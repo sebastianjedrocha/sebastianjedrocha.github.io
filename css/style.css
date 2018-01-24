@@ -165,7 +165,9 @@ h3 {
   background-image: -webkit-gradient(linear, left top, right top, from(#ff0000), to(#6200ea));
   background-image: linear-gradient(to right, #ff0000, #6200ea);
   -webkit-background-clip: text;
-  font-weight: inherit; }
+  font-weight: inherit;
+  z-index: 120;
+}
 
 .heading-1--main {
   font-size: 6rem;
