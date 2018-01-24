@@ -225,12 +225,12 @@ h3 {
     transform: translateY(10rem); }
     @media (max-width: 46.25em) {
       .btn--project:hover .btn--project__text-visible {
-        transform: 0; } }
+        transform: translateY(0); } }
   .btn--project:hover .btn--project__text-invisible {
     transform: translateY(1.5rem); }
     @media (max-width: 46.25em) {
       .btn--project:hover .btn--project__text-invisible {
-        transform: 0; } }
+        transform: translateY(0); } }
 
 input[type="submit"] {
   text-decoration: none;
