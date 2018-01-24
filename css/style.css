@@ -90,9 +90,12 @@ h2 {
     display: block;
     height: 2px;
     background-color: #6200ea;
-    content: " ";
+    content: "";
     width: 100px;
     margin: 0.5rem auto 0 auto; }
+    @media (max-width: 46.25em) {
+      h2::after {
+        display: none; } }
 
 h3 {
   padding-bottom: 2rem; }
