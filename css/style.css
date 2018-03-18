@@ -421,7 +421,6 @@ input[type="submit"] {
     margin-top: 2rem; }
     @media (max-width: 46.25em) {
       .footer__text {
-        grid-row: 1 / 1;
         margin-top: 2rem; } }
   .footer__links {
     display: flex;
@@ -434,7 +433,8 @@ input[type="submit"] {
         top: 0;
         right: 0;
         grid-row: 2 / 2;
-        margin-top: 2rem; } }
+        margin-top: 0;
+        width: 60%; } }
   .footer__icon {
     display: inline-block;
     height: 2.5rem;
