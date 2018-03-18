@@ -1,1 +1,0 @@
-# sebastianjedrocha.github.io
