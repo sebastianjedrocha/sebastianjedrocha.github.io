@@ -3,6 +3,16 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115831580-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115831580-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hi, I&#039;m Sebastian - 21 years old student of Computer Science and Econometrics from Cracow. I&#039;m intrested in front end technologies and yes I&#039;m available for hire. Learn more about me and my work.">
@@ -13,8 +23,9 @@
     <link rel="manifest" href="img/favicons/manifest.json">
     <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Sebastian Jędrocha Portfolio</title>
@@ -22,15 +33,13 @@
 
 <body class="container">
 
-    
     <div class="mobile-button">
-            <svg class="mobile-button__menu js--button-menu">
-                <use xlink:href="img/sprite.svg#icon-menu"></use>
-            </svg>
-            <svg class="mobile-button__cross js--button-cross">
-                <use xlink:href="img/sprite.svg#icon-cross"></use>
-            </svg>
-
+        <svg class="mobile-button__menu js--button-menu">
+            <use xlink:href="img/sprite.svg#icon-menu"></use>
+        </svg>
+        <svg class="mobile-button__cross js--button-cross">
+            <use xlink:href="img/sprite.svg#icon-cross"></use>
+        </svg>
 
     </div>
 
@@ -38,22 +47,41 @@
         <nav class="mobile-nav__box">
             <ul class="mobile-nav__list">
                 <li class="mobile-nav__item">
-                    <a href="#about" class="mobile-nav__link js--nav-link">01 About me</a>
+                    
+                    <a href="#about" class="mobile-nav__link js--nav-link">
+                        <svg class="mobile-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                        </svg>
+                        <span>About me</span>
+                    </a>
                 </li>
                 <li class="mobile-nav__item">
-                    <a href="#knowledge" class="mobile-nav__link js--nav-link-2">02 Knowledge</a>
+                    <a href="#knowledge" class="mobile-nav__link js--nav-link-2">
+                        <svg class="mobile-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-graduation-cap"></use>
+                        </svg>
+                        <span>Knowledge</span>
+                    </a>
                 </li>
                 <li class="mobile-nav__item">
-                    <a href="#projects" class="mobile-nav__link js--nav-link-3">03 Projects</a>
+                    <a href="#projects" class="mobile-nav__link js--nav-link-3">
+                        <svg class="mobile-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-cog"></use>
+                        </svg>
+                        <span>Projects</span>
+                    </a>
                 </li>
                 <li class="mobile-nav__item">
-                    <a href="#contact" class="mobile-nav__link js--nav-link-4">04 Contact</a>
+                    <a href="#contact" class="mobile-nav__link js--nav-link-4">
+                        <svg class="mobile-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-old-mobile"></use>
+                        </svg>
+                        <span>Contact</span>
+                    </a>
                 </li>
             </ul>
         </nav>
     </div>
-
-
 
     <!-- Header -->
     <header class="header">
@@ -90,10 +118,10 @@
 
     <main class="about js--about" id="about">
         <div class="about__text">
-            <h2 class="heading-2">About me</h2>
-            <p>Hi! I’m Sebastian - 21 years old student of Computer Science and Econometrics from Cracow, Poland. Undoubtedly
-                I enjoy solving complex problems and turning them into simple solutions. In addition I’m taking care about
-                quality of my work and always strive to write elegant and efficient code.
+            <div class="test">
+                <h2 class="heading-2">About me</h2>
+            </div>
+            <p>Hi! I’m Sebastian a 20-year-old student of Computer Science and Econometrics from Cracow. I enjoy solving complex problems and turning them into simple solutions. In addition I pay careful attention to the quality of my work and always strive to write elegant and efficient code.
             </p>
         </div>
 
@@ -104,8 +132,7 @@
                     <use xlink:href="img/sprite.svg#icon-thumbs-up"></use>
                 </svg>
                 <h3 class="heading-3">Good team player</h3>
-                <p>I’m a great teammate who has the ability to help people. Furthermore I communicate well with others. I’m
-                    also open to criticism because I keep in mind that there will always be someone better than me.
+                <p>I’m a great teammate who has the ability to help people. Furthermore I communicate well with others. I’m also open to criticism, however I always do my best.
                 </p>
             </div>
 
@@ -114,8 +141,7 @@
                     <use xlink:href="img/sprite.svg#icon-graduation-cap"></use>
                 </svg>
                 <h3 class="heading-3">Quick learning</h3>
-                <p>The best skill I have is knowing how to learn. I’m a good self-learner who are able to keep up with learning
-                    new technologies. If i don’t know the answer i will find the solution no matter what.
+                <p>The best skill I have is knowing how to learn. I’m a good self-learner who are able to keep up with learning new technologies. If i don’t know the answer, I will do whatever it takes to find the solution.
                 </p>
             </div>
 
@@ -124,25 +150,18 @@
                     <use xlink:href="img/sprite.svg#icon-heart"></use>
                 </svg>
                 <h3 class="heading-3">Passionate</h3>
-                <p>It’s simple - I love what I do. I usually coding or simply trying new technologies and tools during my spare
-                    time as much as it possible. Also I would love to cooperate with someone better than me because i want
-                    to learn from the better developers.
+                <p>It’s simple - I love what I do. I usually code or try new technologies and tools during my spare time as much as it is possible. Also I would like to cooperate with someone with greater experience because I'm eager to aquire knowledge from the best developers.
                 </p>
             </div>
         </div>
-
     </main>
-
     <div class="wallpaper">
-
     </div>
 
     <section class="knowledge" id="knowledge">
-
         <div class="knowledge__heading">
             <h2 class="heading-2">knowledge</h2>
         </div>
-
 
         <div class="knowledge__icons-set">
             <svg class="knowledge__icon">
@@ -158,24 +177,18 @@
                 <use xlink:href="img/sprite.svg#icon-js"></use>
             </svg>
             <svg class="knowledge__icon react">
-                <use xlink:href="img/sprite.svg#icon-angular"></use>
+                <use xlink:href="img/sprite.svg#icon-react"></use>
             </svg>
         </div>
 
         <div class="knowledge__content">
-            <p>I must admit I’m not going to say on what level are my skills. I feel the best in HTML5, CSS3 (with sass), Javascript
-                and React. I’m pretty sure that I’m able to build kind of small, interesting and functional app’s or website’s.
-                In addition i want to say that i have some experience with other tools like git or npm. If you want to know
-                more about my experience just take a look on my personal projects in section below. Is it not enough for
-                you? So contact with me by social media or contact form instead.
+            <p>
+            It's hard for me to assess the level of my skills because I have no commercial experience. I feel the best at HTML5, CSS3/SCSS, JavaScript and React. I'm quite sure that I'm able to build kind of small but interesting and functional apps or websites. In addition, I would like to add that I have some experience with other tools like git, webpack or npm. If you are interested in finding out more details about my experience that's cool! Just take a look on my personal projects in the section below. If you still need to know more, don't hestitate to contact me by social media or the contact form.
             </p>
         </div>
     </section>
 
-
-
     <section class="projects" id="projects">
-
         <h2 class="heading-2">Projects</h2>
 
         <div class="project">
@@ -214,7 +227,7 @@
 
         <div class="project">
             <img src="img/project-2.jpg" alt="Car repair budget app project image" class="project__img">
-            <h4 class="project__name">Car repair budget</h4>
+            <h4 class="project__name">Budget App</h4>
             <div class="project__container">
                 <div class="project__container--2">
                     <div class="project__info">
@@ -261,7 +274,7 @@
                         <svg>
                             <use xlink:href="img/sprite.svg#icon-arrow"></use>
                         </svg>
-                        <p>CSS3</p>
+                        <p>CSS3/SCSS</p>
                     </div>
                     <div class="project__info">
                         <svg>
@@ -273,7 +286,7 @@
                 </div>
             </div>
             <div class="project__btn">
-                <a href="" class="btn btn--project">
+                <a href="https://github.com/Burtoon/My-portfolio-site" class="btn btn--project">
                     <span class="btn--project__text-visible">More info</span>
                     <span class="btn--project__text-invisible">Go to github</span>
                 </a>
@@ -281,8 +294,8 @@
         </div>
 
         <div class="project">
-            <img src="img/project-3.jpg" alt="Autoservice site project image" class="project__img">
-            <h4 class="project__name">Autoservice Site</h4>
+            <img src="img/project-4.jpg" alt="Autoservice site project image" class="project__img">
+            <h4 class="project__name">Jedrocha Automotive</h4>
             <div class="project__container">
                 <div class="project__container--2">
                     <div class="project__info">
@@ -295,7 +308,7 @@
                         <svg>
                             <use xlink:href="img/sprite.svg#icon-arrow"></use>
                         </svg>
-                        <p>CSS3</p>
+                        <p>CSS3/SCSS</p>
                     </div>
                     <div class="project__info">
                         <svg>
@@ -307,21 +320,83 @@
                 </div>
             </div>
             <div class="project__btn">
-                <a href="" class="btn btn--project">
+                <a href="https://github.com/Burtoon/jedrocha-automotive-site" class="btn btn--project">
                     <span class="btn--project__text-visible">More info</span>
                     <span class="btn--project__text-invisible">Go to github</span>
                 </a>
             </div>
         </div>
 
+        <div class="project">
+            <img src="img/project-6.jpg" alt="Autoservice site project image" class="project__img">
+            <h4 class="project__name">Github User App</h4>
+            <div class="project__container">
+                <div class="project__container--2">
+                    <div class="project__info">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                        </svg>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="project__info">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                        </svg>
+                        <p>CSS3/SCSS</p>
+                    </div>
+                    <div class="project__info">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                        </svg>
+                        <p>React</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="project__btn">
+                <a href="https://github.com/Burtoon/github-user-info" class="btn btn--project">
+                    <span class="btn--project__text-visible">More info</span>
+                    <span class="btn--project__text-invisible">Go to github</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="img/project-5.jpg" alt="Autoservice site project image" class="project__img">
+            <h4 class="project__name">Fruits Online</h4>
+            <div class="project__container">
+                <div class="project__container--2">
+                    <div class="project__info">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                        </svg>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="project__info">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                        </svg>
+                        <p>CSS3/SCSS</p>
+                    </div>
+                    <div class="project__info">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                        </svg>
+                        <p>React</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="project__btn">
+                <a href="https://github.com/Burtoon/fruits-online-app" class="btn btn--project">
+                    <span class="btn--project__text-visible">More info</span>
+                    <span class="btn--project__text-invisible">Go to github</span>
+                </a>
+            </div>
+        </div>
     </section>
 
-
-
-
-
     <section class="form" id="contact">
-
         <h2 class="heading-2 heading-2--form">Stay in touch</h2>
 
         <!-- Box in center of form section -->
@@ -330,8 +405,8 @@
             <!-- Video in form background -->
             <div class="form__bg-video">
                 <video class="form__bg-video__content" autoplay muted loop>
-                    <source src="img/video.mp4" type="video/mp4" >
-                    <source src="img/video.webm" type="video/webm" > Your browser is not supported!
+                    <source src="img/video.mp4" type="video/mp4">
+                    <source src="img/video.webm" type="video/webm"> Your browser is not supported!
                 </video>
             </div>
 
@@ -366,8 +441,6 @@
             </div>
 
         </div>
-
-
     </section>
 
     <!-- Footer -->
@@ -382,7 +455,12 @@
                     <use xlink:href="img/sprite.svg#icon-github"></use>
                 </svg>
             </a>
-            <a href="#">
+            <a href="https://www.facebook.com/sebastian.jedrocha.5">
+                <svg class="footer__icon">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/sebastian-j%C4%99drocha-42223315b/">
                 <svg class="footer__icon">
                     <use xlink:href="img/sprite.svg#icon-linkedin"></use>
                 </svg>
@@ -392,5 +470,4 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
-
 </html>
